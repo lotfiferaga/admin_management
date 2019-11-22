@@ -69,7 +69,6 @@ function App() {
 
       </header>
      <body style={{
-        backgroundColor: '#282c34',
         width: '1350px',
         WebkitOverflowScrolling:'touch'
       }} >
@@ -77,6 +76,8 @@ function App() {
     <div class="jumbotron" style={{textAlign: 'center', backgroundColor: 'white',alignContent:'center',marginTop:'10%'}}>
    
     <h1 class="display-4" >Bienvenue à Esi Manager</h1>
+    <br/>
+    <br/>
     <h3 class="display-5" style={{color:'#088A85'}}>Gestion De Scolarité</h3>
   
     <p class="lead">Plateforme de gestion de scolarité à L'école Nationale Superieure d'Informatique ESI Ex INI.</p>
@@ -84,7 +85,7 @@ function App() {
     <p>Connectez-vous en tant que Administrateur ou Enseignant ou Etudiant pour utiliser Esi Manager.</p>
 
     <p class="lead">
-    <span> <a class="btn btn-lg" href="#" role="button" style={{backgroundColor: '#088A85'}}>Page D'aide</a>
+    <span> 
         <a class="btn btn-lg" href="#" value="" name="connecter" role="button" style={{backgroundColor: '#088A85'}}>Connecter</a>
     </span>
     </p>
@@ -130,10 +131,10 @@ function App() {
                     <a href="#" target="_blank">Acceuil</a>
                 </p>
                 <p>
-                    <a href="#" target="_blank">Aide</a>
+                    <a href="#" target="_blank">Login</a>
                 </p>
                 <p>
-                    <a href="http://www.esi.dz/" target="_blank">Esi.dz</a>
+                    <a href="http://www.esi.dz/" target="_blank">Esi</a>
                 </p>
              
             
