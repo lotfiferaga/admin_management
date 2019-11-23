@@ -1,73 +1,25 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
   return (
-        
+
     <div className="App">
-      
-      <header  
-           style={{backgroundColor: '#20232a',
-                   color: '#ffffff',
-                   position: 'fixed',
-                   zIndex: '1',
-                   width: '100%',
-                   height:'60px',
-                    top: '0',
-                   left: '0',}}>
-                     <a aria-current="page" className="LogoPlacer" href="\" >
-                      <object data='.\img\logo.png' type="image/svg+xml"
-                      style={{
-                        float: 'left',
-                        paddingLeft:'10px'
-                      }}></object>
-                       <span 
-                       style={{color: '#61dafb',
-                       marginLeft: '10px',
-                       marginTop: '14px',
-                       float: 'right',
-                       fontWeight: '700',
-                       fontSize: '20px',
-                       lineHeight:'35px',
-                       paddingLeft:'10px',
-                       paddingRight:'10px'
-                       }} >Esi Manager</span>
-                     </a>
-                     <nav style={{ 
-                       fontWeight: '200',
-                       display: 'flex',
-                       WebkitBoxOrient: 'horizontal',
-                       WebkitBoxDirection: 'normal',
-                       WebkitFlexDirection: 'raw',
-                       WebkitBoxAlign: 'center',
-                       WebkitAlignItems:'stretch',
-                       height: '100%',
-                       paddingLeft: '40px',
-                       paddingRight: '40px',
-                       overflowX:'hidden',
-                       overflowY: 'hidden',
-                       WebkitFlex: '1',
-                       fontSize: '20px',
-                       marginTop: '17px',
-                       float: 'center'
-                       
-                     }}>
-                       <a href="#"
-                        style={{
-                         paddingRight:'10px',
-                         paddingLeft:'10px',
-                       }}>Acceuil</a>
-                       <a href="#"
-                        style ={{
-                         paddingRight:'10px',
-                         paddingLeft:'10px',
-                       }}>Login</a>
-                       <a></a>
-
-                     </nav>
-
-      </header>
+     <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="#home">
+      <img
+        alt=""
+        src="memory/img/logo.png"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      />{' '}
+      Esi Manager 
+    </Navbar.Brand>
+  </Navbar>
      <body style={{
         width: '1350px',
         WebkitOverflowScrolling:'touch'
@@ -86,7 +38,7 @@ function App() {
 
     <p class="lead">
     <span> 
-        <a class="btn btn-lg" href="#" value="" name="connecter" role="button" style={{backgroundColor: '#088A85'}}>Connecter</a>
+        <Button href=""  name="connecter" size="lg" variant="dark">Connecter</Button>
     </span>
     </p>
     </div>
