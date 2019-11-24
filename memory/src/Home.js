@@ -1,16 +1,15 @@
-import React from 'react';
+import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container';
-function App() {
+class Home extends Component {
+  render() {
   return (
 
-    <div className="App">
+    <div ClassName="Home" style={{width:'full'}}>
      <Navbar bg="dark" variant="dark">
-     <Navbar.Brand href="#home">
+    <Navbar.Brand href="#home">
       <img
         alt=""
         src=""
@@ -21,43 +20,29 @@ function App() {
       Esi Manager 
     </Navbar.Brand>
   </Navbar>
+     
      <body style={{
-        width: '1350px',
-        WebkitOverflowScrolling:'touch'
+        width: '1350px'
       }} >
        
     <div class="jumbotron" style={{textAlign: 'center', backgroundColor: 'white',alignContent:'center',marginTop:'10%'}}>
-    <div class="container-fluid bg " >
-    <div class="row">  
-    <div class="col-md-4 col-sm-4 col-xs-8"></div>
-    
-    <div class="col-md-4 col-sm-4 col-xs-8">
+   
+    <h1 class="display-4" >Bienvenue à Esi Manager</h1>
+    <br/>
+    <br/>
+    <h3 class="display-5" style={{color:'#088A85'}}>Gestion De Scolarité</h3>
+  
+    <p class="lead">Plateforme de gestion de scolarité à L'école Nationale Superieure d'Informatique ESI Ex INI.</p>
+    <hr/>
+    <p>Connectez-vous en tant que Administrateur ou Enseignant ou Etudiant pour utiliser Esi Manager.</p>
 
-    <Form style={{margintop: '33%' }}>
-    <h3 style={{ textAlign: 'center', color: '#088A85',}}>Login</h3>
-    <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      On Va Pas Partager Votre E-mail avec d'autres Personnes.
-    </Form.Text>
-    </Form.Group>
-
-    <Form.Group controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-    </Form.Group>
-    <Form.Group controlId="formBasicCheckbox">
-    </Form.Group>
-    <Button variant="dark"  type="submit">
-        Se Connecter
-    </Button>
-    </Form>
+    <p class="lead">
+    <span> 
+        <Button href=""  name="connecter" size="lg" variant="dark">Connecter</Button>
+    </span>
+    </p>
+    </div>
     
-    </div> 
-    </div>
-    </div>
-    </div>
     
     </body>
     <link
@@ -125,9 +110,9 @@ function App() {
     </div>
    
     </footer>    
-       
-    </div>
+    </div>   
+    
   );
 }
-
-export default App;
+}
+export default Home;
