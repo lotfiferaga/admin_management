@@ -8,16 +8,10 @@ import Button from 'react-bootstrap/Button';
 
 class Ajouter extends Component {
 render() {
+    
   return (
 
     <div className='Ajouter'>
-    <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">
-     <img alt="" src="" width="30" height="30" className="d-inline-block align-top"/>{' '}
-      Esi Manager 
-    </Navbar.Brand>
-    </Navbar>
-
     <body style={{ width: '1350px' }} >
         <div style={{marginTop:'2%'}}>
         <div class="container-fluid bg " >
@@ -25,7 +19,7 @@ render() {
         <div class="col-md-4 col-sm-4 col-xs-8"></div>
     
         <div class="col-md-4 col-sm-4 col-xs-8">
-        <Form style={{margintop: '-40%',border:'3px',borderStyle:'solid' , borderColor:'#20232a', padding: '20px', }}>
+        <Form  style={{margintop: '-40%',border:'3px',borderStyle:'solid' , borderColor:'#20232a', padding: '20px', }}>
         <h1 align="center"style={{color: '#088A85'}}> Introduire les Informations de L'étudiant  </h1 > 
         <hr/>
         <Form.Row>
@@ -87,64 +81,6 @@ render() {
          crossorigin="anonymous"
       />
 
-    <footer class="page-footer font-small unique-color-dark pt-0" style={{backgroundColor:'#20232a',color:'#ffffff',marginBottom:'0px'}}>
-
-    <div style={{backgroundColor: '#088A85',}}>
-        <div class="container">
-            
-            <div class="row py-4 d-flex align-items-center" >
-            </div>
-            
-        </div>
-    </div>
-  
-    <div class="container mt-5 mb-4 text-center text-md-left">
-        <div class="row mt-3">
-   
-            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                <h6 class="text-uppercase font-weight-bold">
-                    <strong>Descriptiion</strong>
-                    <hr/>
-            </h6>
-                <p>Plateforme de gestion de scolarité à L'école Nationale Superieure d'Informatique ESI Ex INI.</p>
-            </div>
-            
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase font-weight-bold">
-                    <strong>Liens utiles</strong>
-                    <hr/>
-                </h6>
-                 <p>
-                    <a href="#" target="_blank">Acceuil</a>
-                </p>
-                <p>
-                    <a href="#" target="_blank">Login</a>
-                </p>
-                <p>
-                    <a href="http://www.esi.dz/" target="_blank">Esi</a>
-                </p>
-             
-            
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <strong>Contact</strong>
-                    <hr/>
-                </h6>
-                <p>
-                    <i class="fa fa-home mr-3"></i> Oued Smar, El harrach</p>
-                <p>
-                    <i class="fa fa-envelope mr-3"></i> Equipe_igl@esi.dz</p>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="footer-copyright py-3 text-center">
-        © 2019 Copyright
-    </div>
-   
-    </footer>
     </div>
     
   );
