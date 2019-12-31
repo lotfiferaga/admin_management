@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "docs":"./node_modules/.bin/jsdoc -c jsdoc.json",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
