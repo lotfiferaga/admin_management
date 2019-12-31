@@ -3,28 +3,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
-class Home extends Component {
+class Profile extends Component {
   render() {
   return (
 
-    <div ClassName="Home" style={{width:'full'}}>     
-     <body style={{
-        width: '1350px'
-      }} >
+    <div ClassName="Profile" style={{width:'full'}}>     
+     <body>
        
     <div class="jumbotron" style={{textAlign: 'center', backgroundColor: 'white',alignContent:'center',marginTop:'10%'}}>
    
-    <h1 class="display-4" >Bienvenue à Esi Manager</h1>
+    <h1 class="display-4" >Bienvenue à Votre Profile</h1>
     <br/>
     <h3 class="display-5" style={{color:'#088A85'}}>Gestion De Scolarité</h3>
   
-    <p class="lead">Plateforme de gestion de scolarité à L'école Nationale Superieure d'Informatique ESI Ex INI.</p>
+    <p class="lead">Vous Pouvez Ajouter Un Etudiant Ou Bien Saisir Les Notes D'Un Etudiant.</p>
     <hr/>
-    <p>Connectez-vous en tant que Administrateur ou Enseignant ou Etudiant pour utiliser Esi Manager.</p>
-
     <p class="lead">
     <span> 
-        <Button href=""  name="connecter" size="lg" variant="dark">Connecter</Button>
+        <Button href=""  name="connecter" size="lg" variant="dark">Ajouter Etudiant</Button>
+        <br/>
+        <br/>
+        <Button href=""  name="connecter" size="lg" variant="dark">Saisir Notes    </Button>
     </span>
     </p>
     </div>
@@ -42,4 +41,4 @@ class Home extends Component {
   );
 }
 }
-export default Home;
+export default Profile;

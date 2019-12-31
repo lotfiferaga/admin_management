@@ -14,7 +14,7 @@ class Header extends Component {
     <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="#home">
      <img alt="" src="" width="30" height="30" className="d-inline-block align-top"/>{' '}
-      Esi Manager 
+     Esi Manager
     </Navbar.Brand>
     </Navbar>
    
