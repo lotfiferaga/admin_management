@@ -2,7 +2,9 @@ import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Button from 'react-bootstrap/Button';
-import Navbar from 'react-bootstrap/Navbar';
+import {BrowserRouter as Router,Link} from 'react-router-dom';
+import Route from 'react-router-dom/Route';
+
 class Home extends Component {
   render() {
   return (
@@ -24,7 +26,12 @@ class Home extends Component {
 
     <p class="lead">
     <span> 
-        <Button href=""  name="connecter" size="lg" variant="dark">Connecter</Button>
+     
+        <Button  name="connecter" size="lg" variant="dark">
+        <Link to="/login"  >
+          Connecter 
+          </Link>
+        </Button> 
     </span>
     </p>
     </div>

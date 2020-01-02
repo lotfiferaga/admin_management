@@ -4,7 +4,8 @@ import './App.css';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
-
+import {BrowserRouter as Router,Link} from 'react-router-dom';
+import Route from 'react-router-dom/Route';
 class Login extends Component {
     render() {
   return (
@@ -34,7 +35,9 @@ class Login extends Component {
     </Form.Group>
     <br/>
     <Button variant="dark"  type="submit">
+    <Link to="/profile">
         Se Connecter
+    </Link>
     </Button>
     </Form>
     

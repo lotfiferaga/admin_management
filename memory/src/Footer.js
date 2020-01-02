@@ -4,8 +4,8 @@ import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
-import { Router, Route, Switch } from "react-router-dom";
+import {BrowserRouter as Router,Link} from 'react-router-dom';
+import Route from 'react-router-dom/Route';
 
 class Footer extends Component {
     render(){
@@ -39,10 +39,18 @@ class Footer extends Component {
                    <hr/>
                </h6>
                 <p>
-                   <a href="#" target="_blank">Acceuil</a>
+                   <a href="#" target="_blank">
+                   <Link to="/">    
+                       Acceuil
+                    </Link>    
+                    </a>
                </p>
                <p>
-                   <a href="#" target="_blank">Login</a>
+                   <a href="" target="_blank">
+                    <Link to="/login"> 
+                       Login
+                    </Link>   
+                    </a>
                </p>
                <p>
                    <a href="http://www.esi.dz/" target="_blank">Esi</a>
