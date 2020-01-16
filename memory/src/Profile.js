@@ -8,7 +8,9 @@ import Route from 'react-router-dom/Route';
 class Profile extends Component {
   render() {
   return (
-
+    /**
+     * Boutouns de routage pour accéder au formulaires d'ajout et de saisie 
+     */
     <div ClassName="Profile" style={{width:'full'}}>     
      <body>
        
@@ -22,16 +24,16 @@ class Profile extends Component {
     <hr/>
     <p class="lead">
     <span> 
-        <Button href=""  name="connecter" size="lg" variant="dark">
+        <Button  name="connecter" size="lg" variant="dark">
         <Link to="/ajouter" >
           Ajouter Etudiant
         </Link>
         </Button>
         <br/>
         <br/>
-        <Button href=""  name="connecter" size="lg" variant="dark">
+        <Button   name="connecter" size="lg" variant="dark">
         <Link to="/saisir">  
-          Saisir Notes   
+          Saisir Les Notes   
         </Link>  
          </Button>
     </span>

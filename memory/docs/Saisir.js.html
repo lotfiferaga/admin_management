@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Saisir.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Saisir.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React,{Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Login from './Login';
+import Home from './Home';
+import Ajouter from './Ajouter';
+ 
+
+class Saisir extends Component {
+  /**
+   * Constructeur de la classe 
+   */
+  /**
+   * 
+   * @param {String} nom      le nom de l'étudiant  
+   * @param {String} prename  prénom de l'étudiant
+   * @param {Number} groupe   numero de groupe
+   * @param {Double} analyse  note d'analyse
+   * @param {Double} algo   note d'alsds 
+   * @param {String} igl  note d'igl
+   * @param {String} dynam  note d'alsdd
+   * @param {String} moyen  moyenne totale
+   */
+  constructor (props){
+    super(props)
+    this.state={
+      nom:null,
+      prename:null,
+      groupe:null,
+      analyse:null,
+      algo:null,
+      igl:null,
+      dynam:null,
+      moyen:null
+      
+    }
+  }
+  
+
+  /**
+   * méthode de prévention d'évenement par défaut 
+   */
+    handleSubmit=(event)=>{
+        event.preventDefault()
+    }
+  /**
+   * méthode pour sauvgarder les données 
+   */  
+  handleInputChange=(event)=>{
+    event.preventDefault()
+    console.log(event)
+    console.log(event.target.name)
+    console.log(event.target.value)
+    this.setState({
+      [event.target.name]:event.target.value,
+      [event.target.name]:event.target.value,
+      [event.target.name]:event.target.value,
+      [event.target.name]:event.target.value,
+      [event.target.name]:event.target.value,
+      [event.target.name]:event.target.value,
+      [event.target.name]:event.target.value,
+      [event.target.name]:event.target.value
+    })
+  }
+render() {
+  /**
+     * declaration des variables pour recupérer les données du formulaire
+     */
+    const {nom}=this.state    
+    const {prename}=this.state 
+    const {groupe}=this.state 
+    const {analyse}=this.state 
+    const {igl}=this.state 
+    const {algo}=this.state 
+    const {dynam}=this.state 
+    const {moyen}=this.state 
+
+  return (
+      
+    &lt;div className="Saisir">
+    &lt;body style={{ width: '1350px' }} >
+        &lt;div style={{marginTop:'2%'}}>
+        &lt;div class="container-fluid bg " >
+        &lt;div class="row">  
+        &lt;div class="col-md-4 col-sm-4 col-xs-8">&lt;/div>
+    
+        &lt;div class="col-md-4 col-sm-4 col-xs-8">
+        &lt;Form style={{margintop: '-40%',border:'3px',borderStyle:'solid' , borderColor:'#20232a', padding: '20px', }}
+         onSubmit={this.handleSubmit}
+        >
+        &lt;h1 align="center"style={{color: '#088A85'}}> Saisir Les Notes de L'étudiant  &lt;/h1 > 
+        &lt;hr/>
+        &lt;Form.Row>
+        &lt;Form.Group  controlId="name">
+        &lt;Form.Label>Nom&lt;/Form.Label>
+        &lt;Form.Control type="username" placeholder="Mark" name="nom" onChange={this.handleInputChange} />
+        &lt;/Form.Group>
+
+        &lt;Form.Group  controlId="prename">
+        &lt;Form.Label>Prénom&lt;/Form.Label>
+        &lt;Form.Control type="username" placeholder="Otto" name="prename" onChange={this.handleInputChange}/>
+        &lt;/Form.Group>
+        &lt;/Form.Row>
+
+        &lt;Form.Group controlId="groupe">
+        &lt;Form.Label>Groupe&lt;/Form.Label>
+        &lt;Form.Control as="select" name="groupe" onChange={this.handleInputChange}>
+        &lt;option>Choisir...&lt;/option>
+        &lt;option>1&lt;/option>
+        &lt;option>2&lt;/option>
+        &lt;option>3&lt;/option>
+        &lt;option>4&lt;/option>
+        &lt;/Form.Control>
+        &lt;/Form.Group>
+        &lt;h3>Modules :&lt;/h3>
+        &lt;hr/>
+        &lt;Form.Group controlId="analyse">
+        &lt;Form.Label>Analyse :&lt;/Form.Label>
+        &lt;Form.Control type="username" placeholder="Note Sur 20" name="analyse" onChange={this.handleInputChange}/>
+        &lt;/Form.Group>
+
+        &lt;Form.Group controlId="algo">
+        &lt;Form.Label>ALSDS :&lt;/Form.Label>
+        &lt;Form.Control type="username" placeholder="Note Sur 20" name="algo" onChange={this.handleInputChange}/>
+        &lt;/Form.Group>
+
+        &lt;Form.Group controlId="igl">
+        &lt;Form.Label> IGL :&lt;/Form.Label>
+        &lt;Form.Control type="username" placeholder="Note Sur 20" name="igl" onChange={this.handleInputChange}/>
+        &lt;/Form.Group>
+
+        &lt;Form.Group controlId="allgo">
+        &lt;Form.Label>ALSDD :&lt;/Form.Label>
+        &lt;Form.Control type="username" placeholder="Note Sur 20" name="dynam" onChange={this.handleInputChange}/>
+        &lt;/Form.Group>
+
+        &lt;Form.Group controlId="moyenne">
+        &lt;Form.Label>Moyenne :&lt;/Form.Label>
+        &lt;Form.Control type="username" placeholder="Note Sur 20" name="moyen" onChange={this.handleInputChange}/>
+        &lt;/Form.Group>
+
+        &lt;Button variant="dark" type="submit" style={{ marginLeft:"120px"}}>
+           Sauvegarder
+        &lt;/Button>
+        &lt;/Form>
+        &lt;br/>
+        &lt;/div>
+        &lt;/div>
+        &lt;/div>
+        &lt;/div> 
+    &lt;/body>
+    &lt;link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+         crossorigin="anonymous"
+      />
+
+    &lt;/div>
+    
+    
+  );
+}
+}
+export default Saisir;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Login.html">Login</a></li><li><a href="Saisir.html">Saisir</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Thu Jan 02 2020 21:41:00 GMT+0100 (GMT+01:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

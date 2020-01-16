@@ -6,13 +6,14 @@ import {BrowserRouter as Router,Link} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
 class Home extends Component {
+  /**
+   * Home 
+   */
   render() {
   return (
 
     <div ClassName="Home" style={{width:'full'}}>     
-     <body style={{
-        width: '1350px'
-      }} >
+     <body>
        
     <div class="jumbotron" style={{textAlign: 'center', backgroundColor: 'white',alignContent:'center',marginTop:'10%'}}>
    

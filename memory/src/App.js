@@ -10,7 +10,9 @@ import Profile from './Profile';
 import {BrowserRouter as Router,Link} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
  class App extends Component
- {
+ {/**
+  * App 
+  */
    render()  {
   return (
     <Router>

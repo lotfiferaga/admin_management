@@ -6,7 +6,9 @@
     "@trendmicro/react-sidenav": "^0.4.5",
     "bootstrap": "^4.3.1",
     "react": "^16.12.0",
+    "react-alert": "^6.0.0",
     "react-bootstrap": "^1.0.0-beta.15",
+    "react-confirm-alert": "^2.4.1",
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
@@ -16,7 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "docs":"./node_modules/.bin/jsdoc -c jsdoc.json",
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
